@@ -1,7 +1,6 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <link rel="stylesheet" href="/style.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
   </head>
   <style>
@@ -29,11 +28,10 @@
   .textContainer img{
     width: 6px;
     margin-right: 4px;
-    margin-bottom: 6px;
   }
   .textContainer p{
     margin-top: 0;
-    margin-bottom: 4px;
+    margin-bottom: 0px;
   }
   .textSubHEAD{
     font-family: 'Inter', sans-serif;
@@ -42,6 +40,7 @@
     font-size: 10px;
     line-height: 12px;
     color: #000000;
+    margin-bottom: 6px !important;
   }
   
   .textSubText{
@@ -62,11 +61,18 @@
     border:none;
     color:#fff;
     padding:8px;
-    margin-top:8px;
     font-family: 'Inter', sans-serif;
     font-style: normal;
     font-weight: 400;
     font-size: 8px;
+  }
+  .row{
+    display: flex;
+    align-items: center;
+    margin-top: 6px;
+  }
+  .row img{
+    margin-right: 8px;
   }
   </style>
   <body>
@@ -85,7 +91,7 @@
       </div> -->
       <table>
         <tr>
-          <!-- <td>
+          <td>
             <div class="imgContainer">
               <img src="./images/logo.png">
             </div>
@@ -94,13 +100,20 @@
             <div class="textContainer">
               <p class="textSubHEAD">Visual Designer</p>
               <div class="textSubText"><img src="./images/phone.png"> <p>+91 9042614812</p></div>
-              <div class="textSubText"><img src="./images/calendar.png"> <p>Schedule a Demo</p></div>
-              <div class="textSubText"><img src="./images/linkedin.png"> <p>LinkedIn</p></div>
+              <!-- <div class="textSubText"><img src="./images/calendar.png"> <p>Schedule a Demo</p></div>
+              <div class="textSubText"><img src="./images/linkedin.png"> <p>LinkedIn</p></div> -->
             </div>
-          </td> -->
+          </td>
         </tr>
       </table>
     </div>
-    <button>Customized CTA >></button>
+    <div class="row">
+      <div>
+        <img src="./images/linkedin.png">
+      </div>
+      <div>
+        <button>Customized CTA >></button>
+      </div>
+    </div>
   </body>
 </html>
